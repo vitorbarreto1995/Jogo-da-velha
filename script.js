@@ -71,6 +71,48 @@ opcoes.btnJogar.addEventListener("click", () =>{
 
 });
 
+jogo.jogada1.addEventListener("click", (e)=>{
+    jogada(e, 1);
+});
+
+jogo.jogada1.addEventListener("click", (e)=>{
+    jogada(e, 2);
+});
+
+jogo.jogada1.addEventListener("click", (e)=>{
+    jogada(e, 3);
+});
+
+jogo.jogada1.addEventListener("click", (e)=>{
+    jogada(e, 4);
+});
+
+jogo.jogada1.addEventListener("click", (e)=>{
+    jogada(e, 5);
+});
+
+jogo.jogada1.addEventListener("click", (e)=>{
+    jogada(e, 6);
+});
+
+jogo.jogada1.addEventListener("click", (e)=>{
+    jogada(e, 7);
+});
+
+jogo.jogada1.addEventListener("click", (e)=>{
+    jogada(e, 8);
+});
+
+jogo.jogada1.addEventListener("click", (e)=>{
+    jogada(e, 9);
+});
+
+//Criando as functions do programa, ou seja, as ações dos objetos.
+
+
+
+
+
 
 
 
