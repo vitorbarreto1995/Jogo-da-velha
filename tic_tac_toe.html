@@ -12,18 +12,20 @@
 
     <div class="containerMain ">
          <header>
+
             <div class="painel hide">
 
-                <div class="player">
-                    <span id="playerX"></span>
-                    <span class="points">Points: <strong id="pointsPlayerX">0</strong></span>
+                <div class="painelPlayers">
+                    <span id="playerX">X</span>
+                    <span class="playersPoints">Pontos: <strong id="playerXPoints">0</strong></span>
                 </div>
-                <div class="player">
-                    <span id="player0"></span>
-                    <span class="points">Points: <strong id="pointsPlayer0">0</strong></span>
+                <div class="painelPlayers">
+                    <span id="playerO">O</span>
+                    <span class="playersPoints">Pontos: <strong id="playerOPoints">0</strong></span>
                 </div>
+
                 <div class="next">
-                    <em><span>Next to play</span><strong id="nextPlayer"></strong></em>
+                    <em><span>Next to play : </span><strong id="nextPlayer"></strong></em>
                 </div>
 
             </div>
@@ -31,17 +33,18 @@
             <div class="opcoesJogo">
 
                 <div class="headerGroup">
-                    <label for="playerX">Player X</label>
-                    <input id="JogadorX" type="text" autocomplete="off">
+                    <label for="usuario-x">Player X</label>
+                    <input id="usuario-x" type="text" autocomplete="off">
                 </div>
                 <div class="headerGroup">
-                    <label for="player0">Player O</label>
-                    <input id="Jogador0" type="text" autocomplete="off">
+                    <label for="usuario-o">Player O</label>
+                    <input id="usuario-o" type="text" autocomplete="off">
                 </div>
 
                 <button id="btnPlay">To play</button>
 
             </div>
+
          </header>
 
         <div class="tictactoe1"></div>
