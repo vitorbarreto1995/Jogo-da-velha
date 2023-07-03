@@ -5,32 +5,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <div class="containerMain">
-
-        <header>
+    <div class="containerMain ">
+         <header>
             <div class="painel">
 
                 <div class="player">
-                    <span id="payer1"></span>
-                    <span class="points">Points: <strong id="pointsPlayer1">0</strong></span>
+                    <span id="playerX"></span>
+                    <span class="points">Points: <strong id="pointsPlayerX">0</strong></span>
                 </div>
                 <div class="player">
-                    <span id="player2"></span>
-                    <span class="points">Points: <strong id="pointsPlayer2">0</strong></span>
+                    <span id="player0"></span>
+                    <span class="points">Points: <strong id="pointsPlayer0">0</strong></span>
                 </div>
                 <div class="next">
                     <em><span>Next to play</span><strong id="nextPlayer"></strong></em>
                 </div>
 
-                <button id="btn-play"></button>
-                
             </div>
-        </header>
+
+            <div class="opcoesJogo">
+
+                <div class="headerGroup">
+                    <label for="playerX">Player X</label>
+                    <input id="JogadorX" type="text" autocomplete="off">
+                </div>
+                <div class="headerGroup">
+                    <label for="player0">Player O</label>
+                    <input id="Jogador0" type="text" autocomplete="off">
+                </div>
+
+                <button id="btnPlay">To play</button>
+
+            </div>
+         </header>
+
+        <div class="titactoe1"></div>
+        <div class="titactoe2"></div>
+        <div class="titactoe3"></div>
+        <div class="titactoe4"></div>
+        <div class="titactoe5"></div>
+        <div class="titactoe6"></div>
+        <div class="titactoe7"></div>
+        <div class="titactoe8"></div>
+        <div class="titactoe9"></div>
         
     </div>
 
