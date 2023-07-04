@@ -1,140 +1,61 @@
-
-/*Declarando váriaveis*/
-:root{
-    --color-primary: rgb(40,140,40);
-    --color-secundary: rgb(40,100,40);
-    --color-geral: #121214;
-    --font-color: rgb(255,255,250);
-}
-
-/*Resetando o css do navegador*/
-html, body{
+body{
     margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/*Container principal*/
-.containerMain{
+.game{
+    width: 100vw;
+    height: 100vw;
+    margin: 0 auto;
+    background-color: #34495e;
+    color: #fff;
     display: grid;
-    grid-template-columns: 200px 200px 200px;
-    grid-template-rows: 20vh 20vh 20vh 20vh calc(20vh - 20px);
-    background-color: var(--color-geral);
-    color: var(--font-color);
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+}
 
-    grid-template-areas: "h  h  h"
-                         "v1 v2 v3"
-                         "v4 v5 v6"
-                         "v7 v8 v9";
-    
-    grid-gap: 5px;
+.game > div{
+    border: 6px solid #2c3e50;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 4em;
+    display: flex;
     justify-content: center;
-    align-content: center;
-    padding-top: 10px;
+    align-items: center;
 }
 
-header{
-    grid-area: h;
-    display: grid;
-    grid-gap: 5px;
-    justify-content: start;
-    align-content: center;
-    margin-top: 10px 10px;
+.btn{
+    border: 5px solid #2c3e50;
+    background-color: #34495e;
+    color: white;
+    margin-top: 10px;
+    padding: 10px 20px;
 }
 
-.containerMain > div{
-    background-color: var(--color-primary);
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    border-radius: 10px;
-    font-size: 50px;
-    font-weight: 800;
+.game > div.winner{
+    background: yellow;
 }
 
-.containerMain >div:hover{
-    background-color: var(--color-secundary);
-    cursor: pointer;
+.game > div.winner > span{
+    color: blue;
 }
 
-/*Daqui para baixo CSS especifico*/
-.opcoesJogo{
-    padding-bottom: 15px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "hgx bg"
-                         "hgo bg";
-    justify-content: center;
+@media (min-width: 600px){
+    .game{
+        width: 600px;
+        height: 600px;
+        border-radius: 10px;
+        border: 6px solid #2c3e50;
+    }
+
+    .game > div{
+        border-radius: 2px;
+    }
 }
 
-.headerGroup #usuario-x{
-    margin-bottom: 5px;
-    grid-area: hgx;
-}
-
-.headerGroup #usuario-o{
-    margin-bottom: 5px;
-    grid-area: hgo;
-}
-
-#btnPlay{
-    grid-area: bg;
-    width: 200px;
-    height: 80px;
-    align-self: center;
-    justify-self: end;
-    background-color: var(--color-primary);
-    border: 0;
-    font-size: 20px;
-    font-weight: 600;
-    color: var(--font-color);
-
-
-}
-
-#btnPlay:hover{
-    cursor: pointer;
-    background-color: var(--color-secundary);
-}
-
-.headerGroup > label{
-    font-size: 18px;
-}
-
-.headerGroup > input{
-    padding: 5px;
-    text-transform: none;
-    text-decoration: none;
-    border: 0;
-    background-color: transparent;
-    border: 1px solid var(--color-primary);
-    color: var(--color-secundary);
-    font-weight: 600;
-    font-size: 15px;
-    margin-left: 15px;
-}
-
-.painelPlayers{
-    font-size: 14px;
-
-}
-
-.playersPoints{
-    margin-left: 90px;
-    float: right;
-}
-
-.playersPoints > strong{
-    font-size: 20px;
-}
-
-.next{
-    margin-top: 50px;
-}
-
-.hide{
-    display: none;
+@media (min-width: 1024px){
+    .btn{
+        cursor: pointer;
+    }
 }

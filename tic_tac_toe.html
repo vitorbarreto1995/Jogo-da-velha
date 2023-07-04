@@ -1,65 +1,26 @@
-<!--C-132-->
+<!--c-132-->
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic Tac Toe</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>tic tac toe</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <div class="containerMain ">
-         <header>
-
-            <div class="painel hide">
-
-                <div class="painelPlayers">
-                    <span id="playerX">X</span>
-                    <span class="playersPoints">Pontos: <strong id="playerXPoints">0</strong></span>
-                </div>
-                <div class="painelPlayers">
-                    <span id="playerO">O</span>
-                    <span class="playersPoints">Pontos: <strong id="playerOPoints">0</strong></span>
-                </div>
-
-                <div class="next">
-                    <em><span>Next to play : </span><strong id="nextPlayer"></strong></em>
-                </div>
-
-            </div>
-
-            <div class="opcoesJogo">
-
-                <div class="headerGroup">
-                    <label for="usuario-x">Player X</label>
-                    <input id="usuario-x" type="text" autocomplete="off">
-                </div>
-                <div class="headerGroup">
-                    <label for="usuario-o">Player O</label>
-                    <input id="usuario-o" type="text" autocomplete="off">
-                </div>
-
-                <button id="btnPlay">To play</button>
-
-            </div>
-
-         </header>
-
-        <div class="tictactoe1"></div>
-        <div class="tictactoe2"></div>
-        <div class="tictactoe3"></div>
-        <div class="tictactoe4"></div>
-        <div class="tictactoe5"></div>
-        <div class="tictactoe6"></div>
-        <div class="tictactoe7"></div>
-        <div class="tictactoe8"></div>
-        <div class="tictactoe9"></div>
-        
-    </div>
-
+    <div class="game"></div>
+    <button class="btn" onclick="tic_tac_toe.restart()" title="Restart this game">Restart</button>
 
     <script src="script.js"></script>
+
+    <script>
+        tic_tac_toe.init(document.querySelector(".game"));
+        tic_tac_toe.start();
+    </script>
+    
 </body>
 </html>
